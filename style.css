@@ -1,0 +1,24 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  left: 15%;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: solid 3px black;
+}
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+#alert {
+  color: red;
+  font-size: 30px;
+}
