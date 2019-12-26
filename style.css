@@ -1,24 +1,88 @@
 @charset "UTF-8";
 * {
   font-family: 微軟正黑體;
-  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 60px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 22px;
+    width: 330px;
+    margin-left: 10px;
+  }
+}
+
+.aa {
+  background: #FF84A7;
+  padding: 20px 120px 10px 120px;
+}
+@media screen and (max-width: 768px) {
+  .aa {
+    background: #FFF685;
+  }
+}
+@media screen and (max-width: 414px) {
+  .aa {
+    background: #94E1FF;
+    width: 330px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+}
+.aa input {
+  color: blue;
+  border-radius: 5px;
+}
+.aa .traveldate {
+  padding-left: 50px;
+}
+.aa .traveltime {
+  padding-left: 50px;
 }
 
 .btn {
   display: inline-block;
-  left: 15%;
   cursor: pointer;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  padding: 8px;
-  border: solid 3px black;
+  margin-left: 40%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 .btn:hover {
-  background-color: red;
+  background-color: #FF37A1;
   color: white;
 }
 
-#alert {
+.day {
+  width: 445px;
+  height: 60px;
+  padding: 10px;
   color: red;
-  font-size: 30px;
+  font-size: 26px;
+}
+@media screen and (max-width: 414px) {
+  .day {
+    width: 310px;
+    border-radius: 15px;
+    padding: 6px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
 }
