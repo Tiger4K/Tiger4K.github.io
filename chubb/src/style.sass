@@ -1,0 +1,108 @@
+$color_lightpink: #FF84A7
+$color_deeppink: #FF37A1
+$color_lightyellow: #FFF685
+$color_tiffanyblue: #94E1FF
+$color_gray: #555
+
+$pc: 900px
+$pad: 768px
+$mobile: 414px
+
+@mixin pc
+  @media screen and (max-width: $pc)
+    @content
+@mixin pad
+  @media screen and (max-width: $pad)
+    @content
+@mixin mobile
+  @media screen and (max-width: $mobile)
+    @content
+    
+*
+  font-family : 微軟正黑體
+  // border: solid 2px black
+  // margin: 8px
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  
+h1
+  text-align: center
+  @include pad
+    margin-top: 60px
+    font-size: 26px
+  
+  @include mobile
+    font-size: 22px
+    width: 330px
+    margin-left: 10px
+
+.aa
+  background: $color_lightpink
+  // border-radius: 15px
+  padding: 20px 120px 10px 120px
+  // 230+240=470
+  border-radius: 15px
+  
+  & input
+    width: 140px
+    // border-radius: 5px
+    
+  // ::placeholder
+  //   color: red
+  
+  & .traveldate
+      padding: 10px
+  & .traveltime
+      padding: 10px
+
+  @include pad
+    background: $color_lightyellow
+    padding-left: 20%
+
+  @include mobile
+    background: $color_tiffanyblue
+    width: 310px
+    padding: 10px 0px 10px 50px
+    
+      
+  
+
+.btn 
+  display: inline-block
+  cursor: pointer
+  margin-left: 35%
+  padding: 10px
+  margin-top: 5px
+  border-radius: 5px
+  border: solid 2px #555
+  box-shadow: 0 0 2px 2px #eee
+    
+  &:hover
+    // background-color: $color_tiffanyblue
+    color: #333
+    border: solid 2px #eee  
+    
+    
+  
+  @include mobile
+  
+.day
+  // border: solid 3px red
+  width: 445px
+  //設高度就不會讓紅字上面div變化高度
+  height: 60px
+  padding: 20px
+  color: red
+  font-size: 26px
+  @include mobile
+    width: 310px
+    border-radius: 15px
+    padding: 10px
+    margin-left: 10px
+    font-size: 20px
