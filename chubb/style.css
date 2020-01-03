@@ -32,48 +32,50 @@ h1 {
 .aa {
   background: #FF84A7;
   padding: 20px 120px 10px 120px;
+  border-radius: 15px;
+}
+.aa input {
+  width: 140px;
+}
+.aa .traveldate {
+  padding: 10px;
+}
+.aa .traveltime {
+  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .aa {
     background: #FFF685;
+    padding-left: 20%;
   }
 }
 @media screen and (max-width: 414px) {
   .aa {
     background: #94E1FF;
-    width: 330px;
-    border-radius: 15px;
-    padding: 10px;
+    width: 310px;
+    padding: 10px 0px 10px 50px;
   }
-}
-.aa input {
-  color: blue;
-  border-radius: 5px;
-}
-.aa .traveldate {
-  padding-left: 50px;
-}
-.aa .traveltime {
-  padding-left: 50px;
 }
 
 .btn {
   display: inline-block;
   cursor: pointer;
-  margin-left: 40%;
+  margin-left: 35%;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
+  border: solid 2px #555;
+  box-shadow: 0 0 2px 2px #eee;
 }
 .btn:hover {
-  background-color: #FF37A1;
-  color: white;
+  color: #333;
+  border: solid 2px #eee;
 }
 
 .day {
   width: 445px;
   height: 60px;
-  padding: 10px;
+  padding: 20px;
   color: red;
   font-size: 26px;
 }
@@ -81,7 +83,7 @@ h1 {
   .day {
     width: 310px;
     border-radius: 15px;
-    padding: 6px;
+    padding: 10px;
     margin-left: 10px;
     font-size: 20px;
   }
